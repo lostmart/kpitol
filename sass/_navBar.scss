@@ -3,25 +3,57 @@
 
   .myNavbar__rowTop{
     color: #fff;
+    font-size: 1.5rem;
     }
   .myNavbar__social{
     color: #fff;
     float: right;
-    border: 2px solid #fff;
-    padding: 10px;
-    margin: 5px;
+    border: 1.6px solid #fff;
+    padding: 5px;
+    margin: 3px;
+    margin-top: 9px;
     border-radius: 50%;
+    font-size: 1.1rem;
     }
+    .fa-facebook{
+      padding: 5px 7px;
+      }
   .myNavbar__line{
     border-top: 2px solid #eee;
     clear: both;
+    margin: 1px;
     }
   .myNavbar__brand{
     padding: 5px;
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-shadow: -3px 2px 5px darken($brand-primary, 80%);
     }
 
-  .myNavbar__logoRow{
+    .myNavbar__brand_subtitle{
+      font-size: 2.5rem;
+      border-top: 2px solid;
+      line-height: 2.6;
+      letter-spacing: .4rem;
+      border-bottom: 1px solid;
+      }
 
+      .myNavbar__brand_subtitle2{
+        font-size: 1.6rem;
+        text-transform: none;
+        float: right;
+        color: #f7f7f7;
+        margin-top: 5%;
+        }
+
+    .myNavbar__logo_img{
+      display: inline-block;
+      transform: translateY(-28%);
+      }
+
+  .myNavbar__logoRow{
+    height: 92px;
+    padding-top: 10px;
     }
 
   .myNavbar__items{
