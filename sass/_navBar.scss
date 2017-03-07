@@ -15,7 +15,7 @@
     border-radius: 50%;
     font-size: 1.1rem;
     }
-    .fa-facebook{
+  .fa-facebook{
       padding: 5px 7px;
       }
   .myNavbar__line{
@@ -32,10 +32,11 @@
 
     .myNavbar__brand_subtitle{
       font-size: 2.5rem;
-      border-top: 2px solid;
+      border-top: 1px solid;
       line-height: 2.6;
       letter-spacing: .4rem;
       border-bottom: 1px solid;
+      text-shadow:none;
       }
 
       .myNavbar__brand_subtitle2{
@@ -48,7 +49,9 @@
 
     .myNavbar__logo_img{
       display: inline-block;
-      transform: translateY(-28%);
+      transform: translateY(-3%);
+      height: 93%;
+      margin-left: 10px;
       }
 
   .myNavbar__logoRow{
@@ -56,7 +59,7 @@
     padding-top: 10px;
     }
 
-  .myNavbar__items{
+    .myNavbar__items{
       text-transform: uppercase;
       padding: 9px 10px 7px 10px;
     }
