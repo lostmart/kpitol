@@ -3,12 +3,13 @@
     @media (min-width: $screen-lg) {
         height: 180px;
       }
-
-
-
   .myNavbar__rowTop{
+    display: none;
     color: #fff;
     font-size: 1.5rem;
+      @media(min-width: $screen-sm){
+        display: inline-block;
+      }
     }
   .myNavbar__social{
     color: #fff;
@@ -29,21 +30,27 @@
     margin: 1px;
     }
   .myNavbar__brand{
-    padding: 5px;
     text-transform: uppercase;
-    font-size: 5rem;
     text-shadow: -2px 1px 4px darken($brand-primary, 80%);
+    margin-top: 22px;
+
+      @media(min-width: $screen-md){
+        padding: 5px;
+        font-size: 5rem;
+        margin-top: auto;
+        }
     }
-
-    .myNavbar__brand_subtitle{
-      font-size: 2.5rem;
-      border-top: 1px solid;
-      line-height: 2.6;
-      letter-spacing: .4rem;
-      border-bottom: 1px solid;
-      text-shadow:none;
+  .myNavbar__brand_subtitle{
+    margin-top: 20px;
+        @media(min-width: $screen-md){
+          font-size: 2.5rem;
+          border-top: 1px solid;
+          line-height: 2.6;
+          letter-spacing: .4rem;
+          border-bottom: 1px solid;
+          text-shadow:none;
+        }
       }
-
       .myNavbar__brand_subtitle2{
         font-size: 1.6rem;
         text-transform: none;
@@ -51,28 +58,36 @@
         color: #f7f7f7;
         margin-top: 5%;
         }
-
     .myNavbar__logo_img{
-        width: 20%;
-        @media (min-width: $screen-sm){
-          width: 10%;
-        }
+        width: 34px;
+        margin-top: 28px;
+        margin-left: 10px;
         @media (min-width: $screen-md) {
           display: inline-block;
           transform: translateY(-3%);
           height: 93%;
           margin-left: 10px;
           width: auto;
+          margin-top: auto;
           }
       }
-
-  .myNavbar__logoRow{
+.myNavbar__logoRow{
     height: 92px;
     padding-top: 10px;
     }
-
-    .myNavbar__items{
-        text-transform: uppercase;
-        padding: 9px 10px 7px 10px;
+.myNavbar__items{
+    text-transform: uppercase;
+    padding: 9px 10px 7px 10px;
       }
+  .myNavbar__rightSide{
+    margin-top: 15px;
+      @media (min-width: $screen-md){
+        margin-top: 5px;
+        }
+    }
+}
+
+.navbar-toggle{
+  margin-right: 13px;
+  margin-bottom: 2px;
 }
