@@ -1,5 +1,10 @@
 #myNavbar{
   background: linear-gradient(90deg, #1a64a3, #052642);
+    @media (min-width: $screen-lg) {
+        height: 180px;
+      }
+
+
 
   .myNavbar__rowTop{
     color: #fff;
@@ -48,10 +53,17 @@
         }
 
     .myNavbar__logo_img{
-      display: inline-block;
-      transform: translateY(-3%);
-      height: 93%;
-      margin-left: 10px;
+        width: 20%;
+        @media (min-width: $screen-sm){
+          width: 10%;
+        }
+        @media (min-width: $screen-md) {
+          display: inline-block;
+          transform: translateY(-3%);
+          height: 93%;
+          margin-left: 10px;
+          width: auto;
+          }
       }
 
   .myNavbar__logoRow{
@@ -60,7 +72,7 @@
     }
 
     .myNavbar__items{
-      text-transform: uppercase;
-      padding: 9px 10px 7px 10px;
-    }
+        text-transform: uppercase;
+        padding: 9px 10px 7px 10px;
+      }
 }
