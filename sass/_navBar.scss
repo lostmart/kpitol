@@ -1,5 +1,14 @@
+.navbar-toggle{
+  margin-right: 13px;
+  margin-top: 25px;
+}
+
 #myNavbar{
   background: linear-gradient(90deg, #1a64a3, #052642);
+        height: 75px;
+    @media (min-width: $screen-sm){
+        height: auto;
+      }
     @media (min-width: $screen-lg) {
         height: 180px;
       }
@@ -34,6 +43,10 @@
     text-shadow: -2px 1px 4px darken($brand-primary, 80%);
     margin-top: 22px;
 
+      @media(min-width: $screen-xs){
+        margin-top: 18px;
+        }
+
       @media(min-width: $screen-md){
         padding: 5px;
         font-size: 5rem;
@@ -60,8 +73,11 @@
         }
     .myNavbar__logo_img{
         width: 34px;
-        margin-top: 28px;
-        margin-left: 10px;
+        margin-top: 26px;
+        margin-left: 4px;
+        @media (min-width: $screen-xs) {
+          margin-top: 20px;
+          }
         @media (min-width: $screen-md) {
           display: inline-block;
           transform: translateY(-3%);
@@ -71,23 +87,19 @@
           margin-top: auto;
           }
       }
-.myNavbar__logoRow{
-    height: 92px;
-    padding-top: 10px;
-    }
-.myNavbar__items{
-    text-transform: uppercase;
-    padding: 9px 10px 7px 10px;
+  .myNavbar__logoRow{
+      height: 92px;
+      padding-top: 10px;
       }
-  .myNavbar__rightSide{
-    margin-top: 15px;
-      @media (min-width: $screen-md){
-        margin-top: 5px;
+  .myNavbar__items{
+      text-transform: uppercase;
+      padding: 6px 0;
+      margin: 0px 25px 0 0;
         }
-    }
-}
-
-.navbar-toggle{
-  margin-right: 13px;
-  margin-bottom: 2px;
+    .myNavbar__rightSide{
+      margin-top: 15px;
+        @media (min-width: $screen-md){
+          margin-top: 5px;
+          }
+      }
 }

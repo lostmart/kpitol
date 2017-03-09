@@ -17,14 +17,14 @@
 
     <nav class="navbar navbar-default" id="myNavbar">
       <div class="wrapper row">
-        <div class="col-xs-8 visible-xs-block visible-sm-block">
+        <div class="col-xs-8 visible-sm-block">
           <a class="navbar-brand myNavbar__brand" href="#">
             Kpitol<br>
             <span class="myNavbar__brand_subtitle">immobilier</span>
           </a>
           <img src="img/kpitol-chevalier.png" alt="Kpitol logo" class="myNavbar__logo_img">
         </div>
-        <div class="col-xs-4 col-md-12 myNavbar__rightSide">
+        <div class="col-xs-4 col-md-12 myNavbar__rightSide visible-sm-block visible-md-block visible-lg-block">
           <a href="https://twitter.com/kpitolimmo" target="_blank">
             <i class="fa fa-twitter myNavbar__social" aria-hidden="true"></i>
           </a>
@@ -53,6 +53,13 @@
       <div class="container">
         <div class="wrapper">
           <div class="row">
+            <div class="col-xs-8 visible-xs-block">
+              <a class="navbar-brand myNavbar__brand" href="#">
+                Kpitol<br>
+                <span class="myNavbar__brand_subtitle">immobilier</span>
+              </a>
+              <img src="img/kpitol-chevalier.png" alt="Kpitol logo" class="myNavbar__logo_img">
+            </div>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                 data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -76,11 +83,37 @@
     </nav>
 
     <div class="container">
+      <div class="wrapper clear-fix" id="mainForm">
+        <div class="mainForm__container clearfix">
+          <form class="form-horizontal col-md-4 col-sm-6 col-xs-12">
+            <h2 class="mainForm__title">Formulaire de recherche:</h2>
+            <div class="form-group">
+              <label for="item01" class="col-xs-4 control-label">Premier Item</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" id="item01" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-xs-4 control-label">Seconde
+   Item</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Rechercher <i class="fa fa-search" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </form>
+          <div class="col-md-8 col-sm-6">
+            <img src="img/kpitol-restaurant.jpg" alt="Restaurant Kpitol" class="img-responsive mainForm__img
+            visible-sm-block visible-md-block visible-lg-block">
+          </div>
+        </div> <!-- / .mainForm__container  -->
+        <hr>
+      </div><!--   / #mainForm  . wrapper-->
+    </div><!-- / .container -->
 
-      <div class="wrapper">
-        <img class="center-block" src="img/prov-form.jpg" width="100%">
-      </div>
-
-    </div><!-- /.container -->
   </body>
 </html>
