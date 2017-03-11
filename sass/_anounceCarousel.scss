@@ -1,0 +1,76 @@
+#anounceCarousel{
+  font-family: $sec-font;
+
+  .anounceCarousel__title{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    color: $darkblue;
+    text-align: center;
+    @media(min-width: $screen-xs){
+      text-align: left;
+      width: 100%;
+      }
+    }
+
+  .anounceCarousel__btn{
+    margin: 0px auto 10px auto;
+    display: block;
+    @media(min-width: $screen-xs){
+      display: inline;
+      float:right;
+      }
+    }
+
+  .col-xxs-12{
+    width: 100%;
+    @media(min-width: $screen-xs){
+      width: 50%;
+      float: left;
+      }
+    }
+  .anounceCarousel__item{
+    position: relative;
+    }
+  .anounceCarousel__localite{
+    position: absolute;
+    background: rgba(34, 34, 34, 0.68);
+    color: $gray-lighter;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    margin: 6px;
+    padding: 2px 7px;
+    letter-spacing: .06rem;
+    line-height: 2.5rem;
+    }
+  .anounceCarousel__fav{
+    position: absolute;
+    background: $gray-lighter;
+    top: 136px;
+    line-height: 1rem;
+    padding: 7px;
+    border-radius: 5px;
+    left: 16px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: $brand-primary;
+    }
+  .anounceCarousel__title2{
+    text-transform: uppercase;
+    margin-top: 6px;
+    font-weight: 600;
+    color: #7d7d7d;
+    padding-left: 5px;
+    font-size: 2rem;
+    }
+  .anounceCarousel__surface{
+    line-height: 1rem;
+    font-size: 1.7rem;
+    padding-left: 5px;
+    }
+  .anounceCarousel__prix{
+    line-height: 1.2rem;
+    font-size: 1.9rem;
+    padding-left: 5px;
+    }
+}
