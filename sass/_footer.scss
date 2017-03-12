@@ -1,3 +1,24 @@
 #footer{
   height: 147px;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    font-family: $sec-font;
+    letter-spacing: .03rem;
+
+    .footer__title{
+      text-transform: uppercase;
+      }
+
+    .footer__icon{
+      margin: 1px 12px;
+      color: #87999e;
+      }
+    .footer__line{
+      margin: 0px auto;
+      }
+
+    .footer__list{
+      list-style: none;
+      padding: 0;
+      }
 }
