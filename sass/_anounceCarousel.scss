@@ -46,14 +46,26 @@
   .anounceCarousel__fav{
     position: absolute;
     background: $gray-lighter;
-    top: 136px;
     line-height: 1rem;
     padding: 7px;
     border-radius: 5px;
-    left: 16px;
+    left: 18px;
     cursor: pointer;
     font-size: 1.6rem;
     color: $brand-primary;
+    top: 37vw;
+      @media(min-width: $screen-xs){
+        top: 46vw;
+        }
+      @media(min-width: $screen-sm){
+        top: 155px;
+        }
+      @media(min-width: $screen-md){
+        top: 130px;
+        }
+      @media(min-width: $screen-lg){
+        top: 135px;
+        }
     }
   .anounceCarousel__title2{
     text-transform: uppercase;

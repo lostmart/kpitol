@@ -4,7 +4,7 @@
 }
 
 #myNavbar{
-  background: linear-gradient(90deg, #1a64a3, #052642);
+  background: linear-gradient(140deg, #052642, #1a64a3 );
         height: 75px;
     @media (min-width: $screen-sm){
         height: auto;
@@ -29,9 +29,18 @@
     margin-top: 9px;
     border-radius: 50%;
     font-size: 1.1rem;
+    transition: all 0.4s ease-in 0s;
+    &:hover{
+      color: $brand-primary;
+      background: #fff;
+      }
     }
   .fa-facebook{
       padding: 5px 7px;
+      &:hover{
+        color: $brand-primary;
+        background: #fff;
+        }
       }
   .myNavbar__line{
     border-top: 2px solid #eee;
@@ -42,11 +51,9 @@
     text-transform: uppercase;
     text-shadow: -2px 1px 4px darken($brand-primary, 80%);
     margin-top: 22px;
-
       @media(min-width: $screen-xs){
         margin-top: 18px;
         }
-
       @media(min-width: $screen-md){
         padding: 5px;
         font-size: 5rem;
@@ -94,7 +101,11 @@
   .myNavbar__items{
       text-transform: uppercase;
       padding: 6px 0;
+      padding-left: 6px;
       margin: 0px 25px 0 0;
+        @media (min-width: $screen-sm){
+          padding: 1px;
+          }
         }
     .myNavbar__rightSide{
       margin-top: 15px;
@@ -102,4 +113,14 @@
           margin-top: 5px;
           }
       }
+}
+
+.navbar-collapse{
+  padding: 0;
+  background: linear-gradient(140deg, #052642, #1a64a3 );
+  margin-top: 13px;
+  @media(min-width: $screen-sm){
+    background: transparent;
+    margin-top: auto;
+    }
 }

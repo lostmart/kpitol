@@ -1,4 +1,7 @@
 #mainForm{
+  *{
+      position:inherit !important;
+    }
   .mainForm__container{
     background: #e2e2e2;
     padding: 10px;
