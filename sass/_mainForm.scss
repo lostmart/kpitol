@@ -23,6 +23,11 @@
   }
   .mainForm__img{
     padding: 2px auto;
+    margin-top: 19%;
+    border-radius: 4px;
+    @media (min-width: $screen-md){
+      margin-top: 10%;
+      }
     }
 
   .mainForm__lasLine{
