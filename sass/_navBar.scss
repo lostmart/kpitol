@@ -16,6 +16,7 @@
     display: none;
     color: #fff;
     font-size: 1.5rem;
+    padding-top: 4px;
       @media(min-width: $screen-sm){
         display: inline-block;
       }
@@ -26,7 +27,7 @@
     border: 1.6px solid #fff;
     padding: 5px;
     margin: 3px;
-    margin-top: 9px;
+    margin-top: 14px;
     border-radius: 50%;
     font-size: 1.1rem;
     transition: all 0.4s ease-in 0s;
@@ -98,7 +99,7 @@
       height: 92px;
       padding-top: 10px;
       }
-  .myNavbar__items{
+ .myNavbar__items{
       text-transform: uppercase;
       padding: 6px 0;
       padding-left: 6px;
@@ -106,14 +107,29 @@
         @media (min-width: $screen-sm){
           padding: 1px;
           }
+        @media(min-width: $screen-lg){
+          padding: 6px;
+          }
         }
-    .myNavbar__rightSide{
+  .myNavbar__rightSide{
       margin-top: 15px;
         @media (min-width: $screen-md){
           margin-top: 5px;
           }
       }
+  .myNavbar__social--collapsable{
+      display: inline;
+      float: left;
+    }
+  .myNavbar__social--text{
+    color: #fff;
+    font-size: 1.5rem;
+    }
 }
+
+#twitter{
+      padding-top: 4px;
+  }
 
 .navbar-collapse{
   padding: 0;

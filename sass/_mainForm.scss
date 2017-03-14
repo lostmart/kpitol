@@ -43,4 +43,13 @@
       float:left;
       margin-right: 2px;
       }
+
+  .mainForm__labelMinMax{
+    line-height: 4rem;
+    padding-right: 1px;
+    @media(min-width: $screen-sm){
+        padding-right: 12px;
+      }
+
+    }
 }
