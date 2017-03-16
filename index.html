@@ -71,10 +71,11 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a class="myNavbar__items" href="#">Présentation</a></li>
-                <li><a class="myNavbar__items" href="#">Affaires à la vente</a></li>
-                <li><a class="myNavbar__items" href="#">Contact</a></li>
-                <li><a class="myNavbar__items" href="#">Recrutement</a></li>
+                <li class="active"><a class="myNavbar__items" href="#">Qui sommes nous</a></li>
+                <li><a class="myNavbar__items" href="#">Vous souhaitez acheter</a></li>
+                <li><a class="myNavbar__items" href="#">Vous souhaitez vendre</a></li>
+                <li><a class="myNavbar__items" href="#">Carrières</a></li>
+                <li><a class="myNavbar__items" data-toggle="modal" data-target="#contactForm" href="#">Contact</a></li>
                 <li class="visible-xs-block">
                   <span class="pull-left myNavbar__social--text">Suivez-nous sur:</span>
                   <a href="https://twitter.com/kpitolimmo" target="_blank" class="myNavbar__social--collapsable">
@@ -120,7 +121,6 @@
                 </select>
             </div>
             <div class="form-group">
-
                 <input class="form-control mainForm__minMax" type="text" placeholder="0" id="priceMin">
                 <label for="priceMin" class="pull-left mainForm__labelMinMax">Min</label>
                 <input class="form-control mainForm__minMax" type="text" placeholder="Illimité" id="priceMax">
@@ -237,6 +237,40 @@
 
       </div>
     </footer>
+
+ <!-- Modal -->
+ <div class="modal fade" id="contactForm" role="dialog">
+   <div class="modal-dialog">
+
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Envoyer un message</h4>
+       </div>
+       <div class="modal-body">
+         <div class="container">
+            <form>
+              <div class="form-group">
+                  <input type="text" id="title">
+                  <input type="text" class="form-control contactForm__cntr" id="name" placeholder="Nom">
+              </div>
+              <div class="form-group">
+                  <input type="email" class="form-control contactForm__cntr" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                  <textarea class="form-control contactForm__cntr" placeholder="Message" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+       </div>
+     </div>
+
+   </div>
+ </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>

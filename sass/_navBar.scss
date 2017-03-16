@@ -5,7 +5,7 @@
 
 #myNavbar{
   background: linear-gradient(140deg, #052642, #1a64a3 );
-        height: 75px;
+  height: 75px;
     @media (min-width: $screen-sm){
         height: auto;
       }
@@ -100,6 +100,7 @@
       padding-top: 10px;
       }
  .myNavbar__items{
+      font-size: 1.7rem;
       text-transform: uppercase;
       padding: 6px 0;
       padding-left: 6px;
